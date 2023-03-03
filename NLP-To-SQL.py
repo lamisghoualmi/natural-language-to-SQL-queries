@@ -49,7 +49,7 @@ def generate_sql(query):
     return response.choices[0].text.strip()
 
 
-if st.button('Generate SQL script'):
+if st.button('Generate SQL query'):
   if len(query) > 0:
     Respo=generate_sql(query)
     st.markdown("""_______________________________________________________________________""")
