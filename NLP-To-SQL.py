@@ -26,7 +26,7 @@ st.sidebar.write("""
 st.header('Translate natural language to SQL queries.')
 
 st.info('Example: Write a query that prints a list of employee names from the Employee table in alphabetical order', icon="ℹ️")
-query= st.text_input('Enter you text to generate SQL script', '')
+query= st.text_input('Enter your text to generate SQL query', '')
 
 
 def generate_sql(query):
