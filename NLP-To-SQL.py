@@ -1,6 +1,6 @@
 
 
-# Set up OpenAI API credentials
+
 import openai
 import numpy as np
 import streamlit as st
@@ -49,11 +49,13 @@ def generate_sql(query):
     return response.choices[0].text.strip()
 
 
-if st.button('Generate SQL query'):
+if st.button('Generate SQL script'):
   if len(query) > 0:
     Respo=generate_sql(query)
-    st.markdown("""_______________________________________________________________________""")
     st.write(Respo)
+  else:
+    st.warning('Please enter at least two words. Example: list of customers where country is United states', icon="⚠️")
+
   
 
 
