@@ -18,7 +18,7 @@ st.sidebar.write("""
          ######  This app uses streamlit and OpenAI APIs to translate natural language queries into SQL statements with ease. Simply input your natural language query, and our app will generate the corresponding SQL statement for you to execute, saving you valuable time and effort.
          """)
 st.sidebar.write("""
-         ######  Made by Lamis Ghoualmi  [LinkedIn](https://www.linkedin.com/in/lamisghoualmi/), [Github](https://github.com/lamisghoualmi/)
+         ######  Made by Lamis Ghoualmi  [LinkedIn](https://www.linkedin.com/in/lamisghoualmi/), [Github](https://lamisghoualmi.github.io/)
          """)
 
 
