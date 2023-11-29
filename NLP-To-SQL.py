@@ -10,7 +10,7 @@ import streamlit as st
 
 
 
-st.sidebar.header('Natural language to SQL queries. check my code on GitHub, I postponed this app because OPENAI API credit is in paid  (PS I commented the function for SQL query)')
+st.sidebar.header('Natural language to SQL queries.  check my code on GitHub, I postponed this app because OPENAI API credit is in paid  (PS I commented the function for SQL query)')
 
 st.sidebar.image("sql.png", use_column_width=True)
 
