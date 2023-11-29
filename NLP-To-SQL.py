@@ -10,7 +10,7 @@ openai.api_key=st.secrets["pass"]
 
 
 
-st.sidebar.header('Natural language to SQL queries. ')
+st.sidebar.header('Natural language to SQL queries. check my code on GitHub, I postponed this app because OPENAI API credit is in paid  (PS I commented the function for SQL query)')
 
 st.sidebar.image("sql.png", use_column_width=True)
 
@@ -29,24 +29,24 @@ st.info('Example: Write a query that prints a list of employee names from the Em
 query= st.text_input('Enter your text to generate SQL query', '')
 
 
-def generate_sql(query):
-    model_engine = "text-davinci-002"
-    prompt = (
-        f"Translate the following natural language query to SQL:\n"
-        f"{query}\n"
-        f"SQL:"
-    )
-    response = openai.Completion.create(
-        engine=model_engine,
-        prompt=prompt,
-        temperature=0,
-        max_tokens=150,
-        top_p=1.0,
-        frequency_penalty=0.0,
-        presence_penalty=0.0,
-        stop=["#", ";"]
-    )
-    return response.choices[0].text.strip()
+#def generate_sql(query):
+#    model_engine = "text-davinci-002"
+#    prompt = (
+#        f"Translate the following natural language query to SQL:\n"
+#        f"{query}\n"
+#        f"SQL:"
+#    )
+#    response = openai.Completion.create(
+#        engine=model_engine,
+#        prompt=prompt,
+#        temperature=0,
+#        max_tokens=150,
+ #       top_p=1.0,
+ #       frequency_penalty=0.0,
+ #       presence_penalty=0.0,
+#        stop=["#", ";"]
+ #   )
+ #   return response.choices[0].text.strip()
 
 
 if st.button('Generate SQL script'):
