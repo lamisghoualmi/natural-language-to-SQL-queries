@@ -6,7 +6,7 @@ import numpy as np
 import streamlit as st
 
 # Load OpenAI API key from secrets file
-openai.api_key=st.secrets["pass"]
+#openai.api_key=st.secrets["pass"]
 
 
 
